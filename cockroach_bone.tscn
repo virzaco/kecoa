@@ -1,0 +1,101 @@
+[gd_scene load_steps=7 format=3 uid="uid://77voqsfi80w0"]
+
+[ext_resource type="PackedScene" uid="uid://c4ewcxgp3t7t7" path="res://cockroach-bone.glb" id="1_163hi"]
+[ext_resource type="Script" path="res://kecoa.gd" id="2_qxt27"]
+[ext_resource type="Script" path="res://scripts/state_machine.gd" id="3_5kmtf"]
+[ext_resource type="Script" path="res://scripts/kecoa_idle.gd" id="4_p1sai"]
+[ext_resource type="Script" path="res://scripts/kecoa_looking_around.gd" id="5_1lbqy"]
+[ext_resource type="Script" path="res://scripts/kecoa_walks.gd" id="6_a7bxs"]
+
+[node name="cockroach-bone" instance=ExtResource("1_163hi")]
+script = ExtResource("2_qxt27")
+
+[node name="Skeleton3D" parent="Armature" index="0"]
+bones/0/position = Vector3(0.0812805, -0.405738, 0.169218)
+bones/2/rotation = Quaternion(0.489743, -0.00281499, 0.154577, 0.85805)
+bones/5/rotation = Quaternion(0.289098, 0.0970474, 0.355304, 0.883608)
+bones/6/rotation = Quaternion(-0.454136, 0.210389, -0.186399, 0.84543)
+bones/7/rotation = Quaternion(-0.137491, -0.0708845, -0.163246, 0.974383)
+bones/10/rotation = Quaternion(-0.362519, -0.0082225, -0.309165, 0.879164)
+bones/11/rotation = Quaternion(0.0750509, -0.223935, 0.331627, 0.91337)
+bones/12/rotation = Quaternion(0.232562, 0.126219, -0.0565737, 0.962696)
+bones/16/rotation = Quaternion(0.0651507, -0.0364736, 0.178574, 0.981089)
+bones/61/rotation = Quaternion(0.0078991, -0.0230117, -0.24223, 0.969914)
+bones/61/scale = Vector3(1, 1, 1)
+bones/62/rotation = Quaternion(0.114785, 0.00372028, -0.222402, 0.968167)
+bones/63/rotation = Quaternion(0.0752825, 0.00317403, -0.143554, 0.98677)
+bones/64/rotation = Quaternion(0.0365594, -0.000394116, -0.0446686, 0.998333)
+bones/65/rotation = Quaternion(-0.0218175, -0.0072655, 0.0461232, 0.998671)
+bones/66/rotation = Quaternion(-0.0139443, 0.000179946, 0.0914745, 0.99571)
+bones/67/rotation = Quaternion(-0.00318446, 0.00735673, 0.0638193, 0.997929)
+bones/68/rotation = Quaternion(-0.03827, -0.127894, 0.086897, 0.987232)
+bones/69/rotation = Quaternion(-0.031899, 6.97251e-05, 0.104817, 0.99398)
+bones/70/rotation = Quaternion(-0.0552115, -0.000181483, 0.179155, 0.98227)
+bones/71/rotation = Quaternion(-0.0693052, -0.000612161, 0.213214, 0.974544)
+bones/72/rotation = Quaternion(-0.0757363, -0.00525742, 0.241957, 0.967312)
+bones/72/scale = Vector3(1, 0.999999, 1)
+bones/73/rotation = Quaternion(-0.109293, 0.00294361, 0.210546, 0.971451)
+bones/74/rotation = Quaternion(-0.0961333, -0.00103456, 0.151855, 0.983716)
+bones/78/rotation = Quaternion(0.0575243, 0.0170861, 0.117813, 0.991221)
+bones/78/scale = Vector3(1, 0.999999, 1)
+bones/79/rotation = Quaternion(0.179847, -0.00348918, 0.0585593, 0.981944)
+bones/80/rotation = Quaternion(0.0929262, -0.00300508, 0.0269413, 0.995304)
+bones/81/rotation = Quaternion(-0.0221976, 0.000942415, -0.0344348, 0.99916)
+bones/82/rotation = Quaternion(-0.15548, 0.00547293, -0.09939, 0.982811)
+bones/83/rotation = Quaternion(-0.169184, 0.00118074, -0.137931, 0.975884)
+bones/84/rotation = Quaternion(-0.12908, -0.00742536, -0.0968593, 0.986864)
+bones/85/rotation = Quaternion(-0.120197, 0.128328, -0.0915147, 0.980158)
+bones/86/rotation = Quaternion(-0.0807921, -0.00061106, -0.0357755, 0.996089)
+bones/87/rotation = Quaternion(-0.0741059, 0.00114638, -0.0174447, 0.997097)
+bones/88/rotation = Quaternion(-0.0661842, 0.00149983, -0.0223693, 0.997556)
+bones/89/rotation = Quaternion(-0.0538496, 0.00374597, -0.0755154, 0.995683)
+bones/90/rotation = Quaternion(-0.0490585, -0.00246917, -0.144117, 0.988341)
+bones/91/rotation = Quaternion(0.0183836, -0.000147009, -0.192884, 0.981049)
+bones/91/scale = Vector3(1, 0.999999, 1)
+bones/94/rotation = Quaternion(-0.673387, 0.126859, 0.403454, 0.606367)
+bones/95/rotation = Quaternion(0.906213, -0.188606, -0.244374, 0.288943)
+bones/96/rotation = Quaternion(-0.844325, 0.0660694, 0.354864, 0.396008)
+bones/100/rotation = Quaternion(-0.517079, -0.0913767, 0.458898, 0.716723)
+bones/101/rotation = Quaternion(0.720159, -0.0455589, -0.466104, 0.511901)
+bones/102/rotation = Quaternion(-0.760674, -0.000776965, 0.362044, 0.538794)
+bones/103/rotation = Quaternion(0.221273, 0.00428746, -0.100138, 0.970048)
+bones/103/scale = Vector3(0.999916, 0.999933, 0.999983)
+bones/106/rotation = Quaternion(-0.513932, 0.0861702, -0.499738, 0.691889)
+bones/107/rotation = Quaternion(0.688761, 0.0364853, 0.41045, 0.596497)
+bones/108/rotation = Quaternion(-0.701446, -0.039925, -0.355322, 0.616544)
+bones/109/rotation = Quaternion(0.222867, -0.00238921, 0.0925037, 0.970447)
+bones/112/rotation = Quaternion(0.00403547, 0.00674477, 0.00557665, 0.999954)
+bones/114/rotation = Quaternion(-0.696243, -0.113005, -0.400145, 0.585115)
+bones/115/rotation = Quaternion(0.860038, 0.218807, 0.220795, 0.404608)
+bones/116/rotation = Quaternion(-0.794032, -0.103576, -0.347529, 0.487861)
+bones/117/rotation = Quaternion(0.234335, 0.0236488, 0.0480868, 0.970678)
+bones/120/rotation = Quaternion(0.67291, 0.0172348, 0.164505, 0.720995)
+bones/121/rotation = Quaternion(-0.668827, -0.0863929, -0.633325, 0.379613)
+bones/122/rotation = Quaternion(0.885552, -0.235143, 0.152169, 0.370608)
+bones/123/rotation = Quaternion(-0.211428, -0.0211542, 0.095, 0.972536)
+bones/126/rotation = Quaternion(0.668567, -0.0128453, -0.181158, 0.721135)
+bones/127/rotation = Quaternion(-0.633514, 0.0822656, 0.603476, 0.477188)
+bones/128/rotation = Quaternion(0.833573, 0.279337, -0.136133, 0.456722)
+bones/129/rotation = Quaternion(-0.218005, 0.0216362, -0.0960493, 0.970969)
+bones/131/rotation = Quaternion(-0.210711, -0.0124998, -0.280233, 0.936437)
+bones/140/rotation = Quaternion(-0.208688, 0.0118942, 0.280259, 0.93689)
+bones/149/position = Vector3(-1.62068, -1.66472, -1.53216)
+bones/150/position = Vector3(1.22775, -1.70993, 1.74235)
+bones/151/position = Vector3(-1.41327, -1.69668, 1.591)
+bones/152/position = Vector3(1.61583, -1.53607, 0.406347)
+bones/153/position = Vector3(-1.59807, -1.66667, 0.206196)
+bones/154/position = Vector3(1.65303, -1.52723, -1.33185)
+
+[node name="StateMachine" type="Node3D" parent="." index="2"]
+script = ExtResource("3_5kmtf")
+
+[node name="KecoaIdle" type="Node3D" parent="StateMachine" index="0"]
+script = ExtResource("4_p1sai")
+
+[node name="KecoaLookingAround" type="Node3D" parent="StateMachine" index="1"]
+script = ExtResource("5_1lbqy")
+
+[node name="KecoaWalks" type="Node3D" parent="StateMachine" index="2"]
+script = ExtResource("6_a7bxs")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." index="3"]
